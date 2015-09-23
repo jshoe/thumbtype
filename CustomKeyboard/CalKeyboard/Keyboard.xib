@@ -1,12 +1,26 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8187.4" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="8191" systemVersion="14F27" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8151.3"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="8154"/>
     </dependencies>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="CalKeyboard" customModuleProvider="target">
             <connections>
+                <outlet property="almostThereButton" destination="1FW-oN-ZkR" id="RLK-3c-91W"/>
+                <outlet property="coolButton" destination="QS2-pO-3AO" id="p4V-Tr-I5o"/>
+                <outlet property="deleteButton" destination="kY5-fU-JDc" id="3EN-ap-fTa"/>
+                <outlet property="hahaButton" destination="kNr-b0-5Ta" id="vFj-4d-Rsz"/>
+                <outlet property="holdOnButton" destination="yzH-qu-Ja2" id="s7l-61-fQi"/>
                 <outlet property="nextKeyboardButton" destination="gRt-12-JcF" id="CWQ-gG-G2m"/>
+                <outlet property="noButton" destination="YvP-WZ-MTV" id="dlo-Lf-uje"/>
+                <outlet property="okayButton" destination="1fK-HE-s85" id="KUU-e5-Yq7"/>
+                <outlet property="onMyWayButton" destination="xeE-jq-0eW" id="s8u-YN-z74"/>
+                <outlet property="outsideButton" destination="WRp-U5-rc1" id="gEd-CO-oWo"/>
+                <outlet property="returnButton" destination="FRB-Z1-v6P" id="RiG-ig-IF8"/>
+                <outlet property="spaceButton" destination="sQ1-EH-fnC" id="qX3-70-LGc"/>
+                <outlet property="thanksButton" destination="eLi-bw-YEA" id="cdf-on-TNu"/>
+                <outlet property="whatsUpButton" destination="F7b-0M-52r" id="ECJ-Dh-9b8"/>
+                <outlet property="yeahButton" destination="aqv-jD-RFY" id="XPZ-9V-bCe"/>
             </connections>
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
@@ -15,21 +29,99 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gRt-12-JcF">
-                    <rect key="frame" x="8" y="162" width="30" height="30"/>
-                    <constraints>
-                        <constraint firstAttribute="width" constant="30" id="eu0-xj-Jov"/>
-                        <constraint firstAttribute="height" constant="30" id="rFT-bm-aBM"/>
-                    </constraints>
-                    <state key="normal" title="N"/>
+                    <rect key="frame" x="10" y="162" width="47" height="30"/>
+                    <state key="normal" title="Switch"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRB-Z1-v6P">
+                    <rect key="frame" x="10" y="124" width="46" height="30"/>
+                    <state key="normal" title="Return"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kY5-fU-JDc">
+                    <rect key="frame" x="10" y="8" width="45" height="30"/>
+                    <state key="normal" title="Delete"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aqv-jD-RFY">
+                    <rect key="frame" x="309" y="8" width="34" height="30"/>
+                    <state key="normal" title="Yeah"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eLi-bw-YEA">
+                    <rect key="frame" x="309" y="41" width="50" height="30"/>
+                    <state key="normal" title="Thanks"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1fK-HE-s85">
+                    <rect key="frame" x="309" y="103" width="35" height="30"/>
+                    <state key="normal" title="Okay"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kNr-b0-5Ta">
+                    <rect key="frame" x="309" y="131" width="36" height="30"/>
+                    <state key="normal" title="Haha"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1FW-oN-ZkR">
+                    <rect key="frame" x="166" y="41" width="88" height="30"/>
+                    <state key="normal" title="Almost there"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WRp-U5-rc1">
+                    <rect key="frame" x="166" y="71" width="75" height="30"/>
+                    <state key="normal" title="I'm outside"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzH-qu-Ja2">
+                    <rect key="frame" x="166" y="103" width="54" height="30"/>
+                    <state key="normal" title="Hold on"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xeE-jq-0eW">
+                    <rect key="frame" x="166" y="8" width="76" height="30"/>
+                    <state key="normal" title="On my way"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sQ1-EH-fnC">
+                    <rect key="frame" x="166" y="162" width="52" height="30"/>
+                    <state key="normal" title="(space)"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7b-0M-52r">
+                    <rect key="frame" x="166" y="131" width="77" height="30"/>
+                    <state key="normal" title="What's up?"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QS2-pO-3AO">
+                    <rect key="frame" x="309" y="162" width="32" height="30"/>
+                    <state key="normal" title="Cool"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YvP-WZ-MTV">
+                    <rect key="frame" x="304" y="71" width="30" height="30"/>
+                    <state key="normal" title="No"/>
                 </button>
             </subviews>
             <constraints>
-                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="LUD-YX-JVD"/>
-                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="tEE-h3-FZa"/>
+                <constraint firstItem="QS2-pO-3AO" firstAttribute="top" secondItem="kNr-b0-5Ta" secondAttribute="bottom" constant="3" id="4dC-Sb-4e6"/>
+                <constraint firstItem="YvP-WZ-MTV" firstAttribute="leading" secondItem="eLi-bw-YEA" secondAttribute="leading" id="5ZJ-GW-k0Q"/>
+                <constraint firstItem="sQ1-EH-fnC" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="64P-3v-NCA"/>
+                <constraint firstItem="F7b-0M-52r" firstAttribute="leading" secondItem="yzH-qu-Ja2" secondAttribute="leading" id="8bW-80-ms3"/>
+                <constraint firstItem="yzH-qu-Ja2" firstAttribute="leading" secondItem="WRp-U5-rc1" secondAttribute="leading" id="B5Q-pM-Id8"/>
+                <constraint firstItem="kNr-b0-5Ta" firstAttribute="leading" secondItem="1fK-HE-s85" secondAttribute="leading" id="ELS-yu-blm"/>
+                <constraint firstAttribute="bottom" secondItem="gRt-12-JcF" secondAttribute="bottom" constant="8" id="FcB-zH-lYO"/>
+                <constraint firstItem="eLi-bw-YEA" firstAttribute="leading" secondItem="aqv-jD-RFY" secondAttribute="leading" id="Gcp-Ke-fN6"/>
+                <constraint firstItem="kY5-fU-JDc" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="I6u-iM-HAF"/>
+                <constraint firstItem="YvP-WZ-MTV" firstAttribute="top" secondItem="eLi-bw-YEA" secondAttribute="bottom" constant="3" id="Msd-cd-afm"/>
+                <constraint firstItem="kNr-b0-5Ta" firstAttribute="top" secondItem="1fK-HE-s85" secondAttribute="bottom" constant="3" id="NZL-aT-ejf"/>
+                <constraint firstItem="WRp-U5-rc1" firstAttribute="leading" secondItem="1FW-oN-ZkR" secondAttribute="leading" id="SNG-AG-DgL"/>
+                <constraint firstItem="gRt-12-JcF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="Y2E-Lt-Xae"/>
+                <constraint firstItem="eLi-bw-YEA" firstAttribute="top" secondItem="aqv-jD-RFY" secondAttribute="bottom" constant="3" id="ZGu-eE-mnS"/>
+                <constraint firstItem="1fK-HE-s85" firstAttribute="leading" secondItem="YvP-WZ-MTV" secondAttribute="leading" id="bMJ-GH-PWp"/>
+                <constraint firstItem="1FW-oN-ZkR" firstAttribute="top" secondItem="xeE-jq-0eW" secondAttribute="bottom" constant="3" id="cJP-W2-rZh"/>
+                <constraint firstItem="1fK-HE-s85" firstAttribute="top" secondItem="YvP-WZ-MTV" secondAttribute="bottom" constant="3" id="caP-wu-x9J"/>
+                <constraint firstItem="1FW-oN-ZkR" firstAttribute="leading" secondItem="xeE-jq-0eW" secondAttribute="leading" id="dXl-bM-ZbT"/>
+                <constraint firstItem="FRB-Z1-v6P" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="egW-8h-JSB"/>
+                <constraint firstAttribute="bottom" secondItem="FRB-Z1-v6P" secondAttribute="bottom" constant="46" id="epQ-CM-RQk"/>
+                <constraint firstItem="yzH-qu-Ja2" firstAttribute="top" secondItem="WRp-U5-rc1" secondAttribute="bottom" constant="3" id="gON-Qt-Foq"/>
+                <constraint firstAttribute="trailing" secondItem="aqv-jD-RFY" secondAttribute="trailing" constant="32" id="maI-ug-QU6"/>
+                <constraint firstItem="WRp-U5-rc1" firstAttribute="top" secondItem="1FW-oN-ZkR" secondAttribute="bottom" constant="3" id="qxo-7g-gGm"/>
+                <constraint firstAttribute="bottom" secondItem="sQ1-EH-fnC" secondAttribute="bottom" constant="8" id="riq-8s-lv6"/>
+                <constraint firstItem="F7b-0M-52r" firstAttribute="top" secondItem="yzH-qu-Ja2" secondAttribute="bottom" constant="3" id="tZQ-0z-V73"/>
+                <constraint firstItem="kY5-fU-JDc" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="10" id="vKs-tW-48G"/>
+                <constraint firstItem="xeE-jq-0eW" firstAttribute="leading" secondItem="sQ1-EH-fnC" secondAttribute="leading" id="yvh-N1-WAK"/>
+                <constraint firstItem="QS2-pO-3AO" firstAttribute="leading" secondItem="kNr-b0-5Ta" secondAttribute="leading" id="zGp-em-b5d"/>
             </constraints>
             <nil key="simulatedStatusBarMetrics"/>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
-            <point key="canvasLocation" x="605.5" y="542"/>
+            <point key="canvasLocation" x="589.5" y="730"/>
         </view>
     </objects>
 </document>
